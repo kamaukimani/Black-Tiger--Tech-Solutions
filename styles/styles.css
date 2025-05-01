@@ -26,6 +26,7 @@ input{
     height: 30px;
     color: #000000;
     justify-content: space-around;
+    font-size: 18px;
 }
 #lform{
     border: 1px solid black;
