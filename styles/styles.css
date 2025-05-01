@@ -35,7 +35,8 @@ input{
     text-align: center;
     height: 400px;
 }
-lbutton{
+#lbutton{
+    font-size: 18px;
     border-radius: 10px;
     cursor: pointer;
     width: 40%;
