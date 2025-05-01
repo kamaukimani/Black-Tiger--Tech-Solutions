@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./src/service.js" defer></script>
     <link rel="icon" type="image/x-icon" href="https://img.freepik.com/free-photo/view-black-panther-wild_23-2150374844.jpg?t=st=1746076864~exp=1746080464~hmac=938235068ba70f030adbbc82c7ef1dddfd83c554c067350c0907332e6b3e1ab3&w=740">
 </head>
 <body>
@@ -18,10 +19,31 @@
     <header>
         <div class="servicediv">
             <h2>Our Services</h2>
-            <p>Learn more about the services we offer.</p>
+            <p id="servicep">To add a service to the site, first choose the service type from the list,<br>
+                which includes Web Development, IT Consultation, Cloud Solutions, and Laptop Sales.<br>
+                 Next, enter a brief description of the service, followed by the price — which should <br>
+                 range between 10,000 and 1,000,000. After that, provide a valid service image URL.<br>
+                  Once all fields are filled in, click the "Add Service" button, and your service will <br>
+                  be instantly displayed on the site..</p>
         </div>
     </header>
-    
+    <section class="sform">
+     <form id="serviceform">
+            <label for="service">CHOOSE SERVICE</label><br>
+            <select id="service" name="service" required><br>
+                <option value="web development">Web Development</option><br>
+                <option value="IT consultation">IT Consultation</option><br>
+                <option value="Cloud Solution">Cloud Solution</option><br>
+                <option value="Laptop Sales">Laptop</option>
+            </select><br>
+            <input type="text" id="description" placeholder="Enter Description" required><br>
+            <input type="number" id="price" min="10000" max="1000000"placeholder="Enter Price" required><br>
+            <input type="url" id="image" placeholder="Enter Service ulr" required><br>
+            <button type="submit" id="lbutton">Add Service</button>
+        </form>
+    </section>
+    <h1>Find Your Service</h1>
+    <section id="servicelist"></section>
 </body>
 <footer>
     <div>
