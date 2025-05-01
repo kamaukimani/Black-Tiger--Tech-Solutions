@@ -15,5 +15,5 @@ const firstName = sessionStorage.getItem("firstName");
 if (firstName) {
     document.getElementById("welcomemessage").textContent = `Welcome, ${firstName}!`;
 } else {
-    window.location.href = "index.html";
+    window.location.href = "login.html";
 }
