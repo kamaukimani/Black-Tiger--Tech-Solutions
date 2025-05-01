@@ -12,9 +12,12 @@ logInForm.addEventListener("submit",function(event){
 
     window.location.href ="home.html";
 });
-const firstName = sessionStorage.getItem("firstName");
+const welcomemessage = document.getElementById("welcomemessage");
+if (welcomemessage) {
+    const firstName = sessionStorage.getItem("firstName");
+};
 if (firstName) {
-    document.getElementById("welcomemessage").textContent = `Welcome, ${firstName}!`;
+    welcomemessage.textContent = `Welcome, ${firstName}!`;
 } else {
     window.location.href = "login.html";
 }
