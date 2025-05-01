@@ -9,7 +9,7 @@ logInForm.addEventListener("submit",function(event){
     sessionStorage.setItem("firstName", firstName);
     sessionStorage.setItem("lastName", lastName);
     sessionStorage.setItem("email",email);
-    window.location.href ="index.html";
+    window.location.href ="home.html";
 });
 const firstName = sessionStorage.getItem("firstName");
 if (firstName) {
