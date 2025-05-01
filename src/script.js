@@ -11,3 +11,9 @@ logInForm.addEventListener("submit",function(event){
     sessionStorage.setItem("email",email);
     window.location.href ="index.html";
 });
+const firstName = sessionStorage.getItem("firstName");
+if (firstName) {
+    document.getElementById("welcomemessage").textContent = `Welcome, ${firstName}!`;
+} else {
+    window.location.href = "index.html";
+}
