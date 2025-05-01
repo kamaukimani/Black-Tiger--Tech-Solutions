@@ -14,7 +14,7 @@ The project showcases fundamental front-end development skills and serves as a b
 * No server or backend is required for this version  
 
 ```
-git clone https://github.com/your-username/black-tiger-tech-solutions.git  
+git clone https://github.com/kamaukimani/Black-Tiger--Tech-Solutions  
 cd black-tiger-tech-solutions  
 open index.html (or double-click the file)
 ```
