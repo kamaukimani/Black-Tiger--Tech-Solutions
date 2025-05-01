@@ -21,7 +21,7 @@ if (welcomemessage) {
 if (firstName) {
     welcomemessage.textContent = `Welcome, ${firstName}!`;
 } else {
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 }
 /*document.addEventListener("DOMContentLoaded", function(){
     let button1 = document.getElementById("lbutton");
