@@ -23,10 +23,3 @@ if (firstName) {
 } else {
     window.location.href = "index.html";
 }
-/*document.addEventListener("DOMContentLoaded", function(){
-    let button1 = document.getElementById("lbutton");
-    button1.addEventListener("click", function(){
-    alert("You have clicked me!!")
-    });
-})
- //  button1.style.backgroundColor = "purple";*/
