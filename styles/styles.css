@@ -1,0 +1,10 @@
+body{
+    background-color: #CCCCCC ;
+    margin: 0;
+    padding: 0;
+}
+input{
+    width:40%;
+    height: 30px;
+    color: #000000;
+}
