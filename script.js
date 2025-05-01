@@ -2,7 +2,7 @@ let logInForm= document.getElementById("lform")
 logInForm.addEventListener("submit",function(event){
     event.preventDefault();
 
-    const firstName = doccument.getElementById("firstName").value;
+    const firstName = document.getElementById("firstName").value;
     const lastName = document.getElementById("lastName").value;
     const email = document.getElementById("email").value;
 
@@ -10,7 +10,7 @@ logInForm.addEventListener("submit",function(event){
     sessionStorage.setItem("lastName", lastName);
     sessionStorage.setItem("email",email);
 
-    window.location.href ="home.html";
+    window.location.href = "home.html";
 });
 const welcomemessage = document.getElementById("welcomemessage");
 if (welcomemessage) {
