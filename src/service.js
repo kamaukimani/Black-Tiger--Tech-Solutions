@@ -24,7 +24,7 @@ displayServives(services);
 serviceForm.reset();
 });
 
-function displayServives(data) {
+function displayServices(data) {
     serviceList.innerHTML = ""
     data.forEach(item => {
         let div =document.createElement("div")
@@ -33,7 +33,7 @@ function displayServives(data) {
         <img src= "${item.image}" alt="${item.service}"/>
         <h3>${item.service}</h3>
         <h3>${item.description}</h3>
-        <h3>${item.price}
+        <h3>${item.price}</h3>
         `;
         serviceList.appendChild(div)
     });
