@@ -38,6 +38,6 @@ function displayServives(data) {
         serviceList.appendChild(div)
     });
 }
-displayServives(services);
+displayServices(services);
 
 //localStorage.removeItem("services")
