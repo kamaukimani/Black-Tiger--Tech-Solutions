@@ -8,15 +8,15 @@ logInForm.addEventListener("submit",function(event){
     const lastName = document.getElementById("lastName").value;
     const email = document.getElementById("email").value;
 
-    sessionStorage.setItem("firstName", firstName);
-    sessionStorage.setItem("lastName", lastName);
-    sessionStorage.setItem("email",email);
+    localStorage.setItem("firstName", firstName);
+    localStorage.setItem("lastName", lastName);
+    localStorage.setItem("email",email);
 
     window.location.href = "home.html";
 });
 const welcomemessage = document.getElementById("welcomemessage");
 if (welcomemessage) {
-    const firstName = sessionStorage.getItem("firstName");
+    const firstName = localStorage.getItem("firstName");
 };
 if (firstName) {
     welcomemessage.textContent = `Welcome, ${firstName}!`;
